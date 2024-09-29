@@ -14,7 +14,7 @@
 
 .container{
     display: grid;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     grid-template-columns: 1fr 4fr;
     font-family: 'robotoregular';
@@ -40,6 +40,7 @@
     font-size: 2rem;
     gap: 10px;
     margin-left: 3rem;
+    margin-bottom: 1rem;
 }
 
 .greeting{
@@ -81,6 +82,7 @@ input:focus{
 
 .profile{
     justify-self: end;
+    margin-top: 1rem;
     margin-right: 4rem;
     display: flex;
     align-items: center;
@@ -167,18 +169,44 @@ li img{
 
 /* SIDEBAR STYLING ENDS */
 
+/* CONTENT STYLING STARTS */
+
 .main-content{
     grid-column: 2 / 3;
     background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    
 }
 
+.projects-title{
+    box-sizing: border-box;
+    margin: 2rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
 
 .projects{
     grid-column: 1 / 2;
     display: grid;
-    background-color: white;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* border: solid black; */
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    box-sizing: border-box;
+    margin: 2rem;
 }
+
+.project{
+    border-left: 10px solid #fde047;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 12rem;
+}
+
+.project span{
+    font-weight: bold;
+    font-size: larger;
+}
+/* CONTENT STYLING ENDS */
