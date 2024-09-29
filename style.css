@@ -37,6 +37,7 @@
 .user-profile{
     display: flex;
     align-items: center;
+    font-size: 2rem;
     gap: 10px;
     margin-left: 3rem;
 }
@@ -52,8 +53,8 @@
 .user-profile-icon{
     border: solid black;
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
+    width: 4rem;
+    height: 4rem;
 }
 
 .search{
@@ -138,6 +139,10 @@ img{
     gap: 20px;
 }
 
+li img{
+    filter: invert(100%);
+}
+
 .settings,
 .menu{
     padding-left: 2rem;
@@ -148,9 +153,16 @@ img{
 }
 
 .dashboard{
+    font-size: 3rem;
     margin: 2rem;
     display: flex;
     align-items: center;
+}
+
+.dashboard img{
+    width: 4rem;
+    height: 4rem;
+    filter: invert(100%);
 }
 
 /* SIDEBAR STYLING ENDS */
@@ -158,5 +170,15 @@ img{
 .main-content{
     grid-column: 2 / 3;
     background-color: #e2e8f0;
-    /* border: solid green; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+
+.projects{
+    grid-column: 1 / 2;
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
