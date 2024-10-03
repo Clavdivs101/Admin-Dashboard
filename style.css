@@ -106,7 +106,7 @@ input:focus{
     height: 2.5rem;
 }
 
-li{
+.menu>li{
     display: flex;
     align-items: center;
     gap: 1px;
@@ -193,7 +193,7 @@ li img{
 
 .projects-title{
     box-sizing: border-box;
-    margin: 2rem;
+    margin: 1.5rem;
     font-weight: bolder;
     font-size: 1.5rem;
 }
@@ -206,7 +206,7 @@ li img{
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
     box-sizing: border-box;
-    margin: 2rem;
+    margin: 1.5rem;
 }
 
 .project{
@@ -215,7 +215,7 @@ li img{
     padding: 2rem;
     border-radius: 10px;
     background-color: #fff;
-    height: 12rem;
+    min-height: 12rem;
 }
 
 .project span{
@@ -223,3 +223,77 @@ li img{
     font-size: larger;
 }
 /* CONTENT STYLING ENDS */
+
+/* Announcements and Trending */
+
+.announcements-title{
+    box-sizing: border-box;
+    margin: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.announcements-wrapper{
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+    box-sizing: border-box;
+    margin-right: 2rem;
+    /* border: solid black; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 38rem; /*might wanna remove this later*/
+    word-break: break-all;
+}
+
+.announcements{
+    /* border: solid red; */
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.announcements ul{
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.announcements>ul>li{
+    list-style-type: none;
+    font-size: 0.9em;
+    /* grid-row: 1fr; */
+}
+
+.separator{
+    height: 0px;
+    width: auto;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid #e2e8f0;
+    border-width: 1px;
+}
+
+/* .announcements>ul>li:first-child{
+    border-bottom: solid #e2e8f0;
+}
+
+.announcements>ul>li:last-child{
+    border-top: solid #e2e8f0;
+} */
+
+.announcements span{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.trending-title{
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+/* Announcements and Trending */
