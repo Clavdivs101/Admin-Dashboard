@@ -226,22 +226,29 @@ li img{
 
 /* Announcements and Trending */
 
+.Announcements{
+
+}
+
+
 .announcements-title{
     box-sizing: border-box;
-    margin: 1.5rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.2rem;
     font-weight: bolder;
     font-size: 1.5rem;
 }
 
 .announcements-wrapper{
-    grid-column: 3 / 3;
+    
+    /* grid-column: 2 / 3; */
     grid-row: 2 / 3;
     box-sizing: border-box;
     margin-right: 2rem;
     /* border: solid black; */
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    height: 38rem; /*might wanna remove this later*/
+    /* grid-template-rows: 1fr 1fr; */
+    /* height: 38rem; */
     word-break: break-all;
 }
 
@@ -276,14 +283,6 @@ li img{
     border-width: 1px;
 }
 
-/* .announcements>ul>li:first-child{
-    border-bottom: solid #e2e8f0;
-}
-
-.announcements>ul>li:last-child{
-    border-top: solid #e2e8f0;
-} */
-
 .announcements span{
     font-size: 1.2em;
     font-weight: bold;
@@ -292,8 +291,48 @@ li img{
 .trending-title{
     box-sizing: border-box;
     margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
     font-weight: bolder;
     font-size: 1.5rem;
 }
+
+.trending-wrapper{
+        /* border: solid red; */
+        grid-template-columns: repeat(auto-fit, 200px);
+        box-sizing: border-box;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: #fff;
+        height: auto;
+}
+
+
+.trending-wrapper ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+    gap: 10px;
+}
+.trending-wrapper>ul>li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.trending-wrapper>ul>li>p>span{
+    display: grid;
+}
+
+.trending-wrapper>ul>li>div{
+    border: solid black;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.identifier{
+    font-weight: 600;
+}
+
 
 /* Announcements and Trending */
